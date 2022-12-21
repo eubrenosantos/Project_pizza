@@ -243,3 +243,7 @@ setInterval(()=>{
 
 
 },1000)
+document.querySelector(".finalizar").addEventListener("click" ,e=>{
+        alert("Compra realizada com sucesso!")
+        window.location.href = "index.html"
+})
