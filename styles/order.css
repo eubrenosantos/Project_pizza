@@ -21,3 +21,311 @@ body{
     font-family: 'Poppins';
 
 }
+
+.CardPizza{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    gap:5px;
+    margin: 20px 10px;
+
+}
+.CardPizza img{
+    width: 200px;
+    height: 200px;
+}
+.CardPizza i{
+    background-color: #8b4627;
+    padding: 7px;
+    border-radius: 999px;
+    color: #ffffff;
+    margin-top: -31px;
+}
+.CardPizza h1{
+    margin-top: 10px;
+    font-weight: 400; 
+}
+.CardPizza h2{
+    font-weight: 700;
+    font-size: 20px; 
+}
+.CardPizza p{
+    line-height: 1.5;
+    font-weight: 00;
+    font-size: 13px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.CardPizza:hover{
+    background-color: #fafafa;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all .35s linear;
+
+}
+
+.models{
+    display: none;
+}
+
+.popoup-fundo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.482);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popoup-content{
+    background-color: white;
+    width: 957px;
+    height: 468px;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.popoup-content img{
+    width: 44%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.content h1{
+    font-weight: 800;
+    font-size: 40px;
+    color: #151515;
+}
+.content p{
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.optionsSizes{
+    background-color: #fafafa;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.optionsSizes button{
+    width:100%;
+    border: none;
+    font-weight:600 ;
+
+}
+.active:hover{
+    background-color: #95431e !important;
+    color: white;
+}
+.optionsSizes button:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+
+}
+.optionsSizes .ultimo{
+    border-radius: 0 10px 10px 0 ;
+}
+.optionsSizes .primeiro{
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.active{
+    background-color: #EF5814;
+    color: white;
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+
+}
+.valor{
+    font-size: 31px;
+    font-weight: 400;
+    
+}
+
+.contador{
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: auto;
+    height: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.juntar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.add-cont, .remove-cont , .add-cont-cart , .remove-cont-cart{
+    font-weight: 400; 
+    color: black;
+}
+.add-cont,.remove-cont,.add-cont-cart , .remove-cont-cart:hover{
+    cursor: pointer;
+}
+.add-cart{
+    background-color: #678a68;
+    padding: 16px;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    color: #fff;
+}
+.cancelar{
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    color: rgb(19, 19, 19);
+}
+.cta-popoup{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cta-popoup button:hover{
+
+    cursor: pointer;
+
+}
+.carrinho{
+    background-color: #f3f3f3;
+    width: 450px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 25px;
+    gap: 10px;
+}
+
+
+.carrinho h1{
+    color: rgb(12, 12, 12);
+    font-size: 35px;
+    font-weight: 600;
+    margin:  0 0 30px 0;
+    
+}
+
+.carrinho h2{
+    width: 100%;
+    text-align: flex-start;
+}
+
+.pizza-carrinho{
+    width: 100%;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+.pizza-carrinho img{
+    width: 80px;
+}
+.contador-cart{
+
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    padding: 15px 25px;
+    border-radius: 10px;
+
+}
+
+hr{
+    width: 100%;
+}
+
+.Sub, .Desc, .Total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.Sub p{
+    font-weight: 700;
+}
+.Desc p{
+
+    font-weight: 700;
+
+}
+.Total p{
+
+    font-weight: 700;
+
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    width: 100%}
+.remover{
+    background-color: transparent;
+    border: none;
+}
+.remover:hover{
+    cursor: pointer;
+    color: #EF5814;
+}
+
+.finalizar{
+    background-color: #EF5814;
+    padding: 13px;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 05px;
+}
+.finalizar:hover{
+    background-color: #bb4c19;
+    cursor: pointer;
+}

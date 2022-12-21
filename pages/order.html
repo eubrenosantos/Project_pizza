@@ -4,15 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13d86ed23e.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/order.css">
     <title>PizzJá</title>
 </head>
 <body>
 
-    <section>
+    <div class="models">
+
+        <div class="pizza-carrinho" cod="">
+
+            <img src="/images/pizza.png">
+            <h2>Calabresa</h2>
+            
+            <div class="contador-cart">
+                <div class="add-cont-cart">+</div>
+                <div class="contagem-cart">1</div>
+                <div class="remove-cont-cart"> - </div>
+            </div>
+            <button class="remover">Remover</button>
+
+
+        </div>
+
+        <div class="CardPizza">
+
+            <img class="img_pizza" src="/images/pizza.png" alt="">
+            <i class="fa-sharp fa-solid fa-plus fa-2x"></i>
+            <h1 class="price_pizza"> - </h1>
+            <h2 class="name_pizza"> -</h2>
+            <p class="description_pizza"> -</p>
+
+        </div>
+
+    </div>
+    <div class="carrinho">
+        <h1>Carrinho</h1>
+
+        <div class="lista">
+
+        </div>
+
+        <hr>
+        <div class="Sub">
+            <p>Subtotal</p>
+            <span> - </span>
+        </div>
+        <hr>
+        <div class="Desc">
+            <p>Desconto</p>
+            <span> - </span>
+        </div>
+        <hr>
+
+        <div class="Total">
+            <p>Total</p>
+            <span> - </span>
+        </div>
+        <button class="finalizar">FINALIZAR COMPRA</button>
         
+        
+    </div>
+
+    <section>
+
+        
+
     </section>
-    
+
+    <div class="popoup-fundo">
+
+        <div class="popoup-content">
+            <img src="/images/pizza.png" alt="">
+            <div class="content">
+                <h1>Calabresa</h1>
+                <p>Descrição da pizza em mais de uma linha muito legal bem interessante</p>
+                <span>TAMANHOS</span>
+                <div class="optionsSizes">
+                    <button accesskey="0" class="primeiro active">Pequena</button>
+                    <button accesskey="1">Média</button>
+                    <button accesskey="2" class="ultimo">Grande</button>
+
+                </div>
+                
+                <div class="preco">
+                    
+                    <span>PREÇO</span>
+                    <div class="juntar">
+                        <div class="valor">R$99,00</div>
+                        <div class="contador">
+                            <div class="add-cont">+</div>
+                            <div class="contagem">1</div>
+                            <div class="remove-cont"> - </div>
+                        </div>
+                        
+                    
+
+                    </div>
+                </div>
+                <div class="cta-popoup">
+                    <button class="add-cart">ADICIONAR AO CARRINHO</button>
+                    <button class="cancelar">CANCELAR</button>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        
+    </div>
+    <script src="/js/cart.js"></script>
+    <script src="/js/pizzas.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
